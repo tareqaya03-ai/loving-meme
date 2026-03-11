@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصور - Loving Holmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1583337134407-607b00a27a4c?w=50&h=50&fit=crop&crop=center" alt="Loving Holmes Logo">
+                    <span class="logo-text" data-translate="logo">Loving Holmes</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-translate="home">الرئيسية</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="about">من نحن</a></li>
+                    <li><a href="services.html" class="nav-link" data-translate="services">خدماتنا</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-translate="facilities">المرافق</a></li>
+                    <li><a href="packages.html" class="nav-link" data-translate="packages">الحزم</a></li>
+                    <li><a href="gallery.html" class="nav-link active" data-translate="gallery">معرض الصور</a></li>
+                    <li><a href="contact.html" class="nav-link" data-translate="contact">اتصل بنا</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <div class="language-selector">
+                        <select id="languageSelect">
+                            <option value="ar">العربية</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+                    <div class="font-controls">
+                        <button id="decreaseFont" class="font-btn" aria-label="تصغير الخط">A-</button>
+                        <button id="increaseFont" class="font-btn" aria-label="تكبير الخط">A+</button>
+                    </div>
+                    <button id="speakBtn" class="speak-btn" aria-label="قراءة صوتية">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-translate="galleryPageTitle">معرض الصور</h1>
+                <p data-translate="galleryPageSubtitle">شاهد لحظات سعادة الكلاب في Loving Holmes</p>
+            </div>
+        </section>
+
+        <!-- Gallery Filters -->
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all" data-translate="allPhotos">كل الصور</button>
+                    <button class="filter-btn" data-filter="facilities" data-translate="facilities">المرافق</button>
+                    <button class="filter-btn" data-filter="dogs" data-translate="happyDogs">كلاب سعيدة</button>
+                    <button class="filter-btn" data-filter="grooming" data-translate="grooming">التجميل</button>
+                    <button class="filter-btn" data-filter="activities" data-translate="activities">الأنشطة</button>
+                    <button class="filter-btn" data-filter="rooms" data-translate="rooms">الغرف</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Facilities Images -->
+                    <div class="gallery-item" data-category="facilities">
+                        <div class="gallery-image">
+                            <img src="https://wallpaperaccess.com/full/2470942.jpg" alt="الاستقبال">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="receptionArea">منطقة الاستقبال</h3>
+                                    <p data-translate="receptionDesc">استقبال دافئ وودود لكلابك</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="facilities">
+                        <div class="gallery-image">
+                            <img src="https://www.sqorebda3.com/vb/attachments/22826/" alt="غرف الإقامة">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="luxuryRooms">غرف فاخرة</h3>
+                                    <p data-translate="roomsDesc">غرف مريحة مع كل وسائل الراحة</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="facilities">
+                        <div class="gallery-image">
+                            <img src="https://www.sqorebda3.com/vb/attachments/22832/" alt="المراعي الخارجية">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="playground">المراعي الخارجية</h3>
+                                    <p data-translate="playgroundDesc">مساحات واسعة للعب والمرح</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Happy Dogs Images -->
+                    <div class="gallery-item" data-category="dogs">
+                        <div class="gallery-image">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.EKwN825XK5Tn7xtIqjrcTwHaE7?w=2048&h=1365&rs=1&pid=ImgDetMain&o=7&rm=3" alt="كلب سعيد">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="happyMoment">لحظة سعادة</h3>
+                                    <p data-translate="happyMomentDesc">كلبنا يستمتع بوقته</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="dogs">
+                        <div class="gallery-image">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.pBzFqIfRWWuAPon_xMD4agHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="كلاب تلعب">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="playtime">وقت اللعب</h3>
+                                    <p data-translate="playtimeDesc">الكلاب تتمتع باللعب معاً</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="dogs">
+                        <div class="gallery-image">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.GdTMSzzlLSegAjA8wS68pwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="كلب نائم">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="napTime">وقت القيلولة</h3>
+                                    <p data-translate="napTimeDesc">راحة مريحة بعد يوم نشط</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grooming Images -->
+                    <div class="gallery-item" data-category="facilities">
+                        <div class="gallery-image">
+                            <img src="https://pic.i7lm.com/wp-content/uploads/2020/05/3-12.jpg" alt="صالة التجميل">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="groomingSalon">صالة التجميل</h3>
+                                    <p data-translate="groomingSalonDesc">خدمات تجميل احترافية</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="grooming">
+                        <div class="gallery-image">
+                            <img src="https://pic.i7lm.com/wp-content/uploads/2019/05/pexels-photo-164186.jpeg" alt="استحمام">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="bathTime">وقت الاستحمام</h3>
+                                    <p data-translate="bathTimeDesc">استحمام لطيف ومنعش</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activities Images -->
+                    <div class="gallery-item" data-category="activities">
+                        <div class="gallery-image">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.q8XtH9K97Y93aJByQYrSpgHaEM?rs=1&pid=ImgDetMain&o=7&rm=3" alt="تمشية">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="walkTime">وقت التمشية</h3>
+                                    <p data-translate="walkTimeDesc">جولات مشي يومية ممتعة</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="activities">
+                        <div class="gallery-image">
+                            <img src="https://img.freepik.com/premium-photo/dog-is-running-beach-with-ocean-background_865967-370766.jpg" alt="تدريب">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="trainingSession">جلسة تدريب</h3>
+                                    <p data-translate="trainingSessionDesc">تدريب ممتع وتفاعلي</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rooms Images -->
+                    <div class="gallery-item" data-category="rooms">
+                        <div class="gallery-image">
+                            <img src="https://static.vecteezy.com/system/resources/previews/042/152/020/large_2x/ai-generated-poster-with-a-dog-playing-on-a-beach-in-front-of-the-sea-free-photo.jpg" alt="غرفة مريحة">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="cozyRoom">غرفة مريحة</h3>
+                                    <p data-translate="cozyRoomDesc">مساحة شخصية دافئة</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="rooms">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=600&h=400&fit=crop" alt="منطقة الراحة">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <h3 data-translate="restArea">منطقة الراحة</h3>
+                                    <p data-translate="restAreaDesc">مكان هادئ للاسترخاء</p>
+                                    <button class="view-btn" data-translate="viewImage">عرض الصورة</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="btn btn-primary btn-large" id="loadMoreBtn" data-translate="loadMore">تحميل المزيد</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Gallery -->
+        <section class="video-gallery">
+            <div class="container">
+                <h2 class="section-title" data-translate="videoGallery">معرض الفيديو</h2>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.EKwN825XK5Tn7xtIqjrcTwHaE7?w=2048&h=1365&rs=1&pid=ImgDetMain&o=7&rm=3" alt="جولة في الفندق">
+                            <div class="video-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 data-translate="hotelTour">جولة في الفندق</h3>
+                        <p data-translate="hotelTourDesc">استكشف مرافقنا الرائعة</p>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.pBzFqIfRWWuAPon_xMD4agHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="يوم في حياة كلب">
+                            <div class="video-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 data-translate="dayInLife">يوم في حياة كلب</h3>
+                        <p data-translate="dayInLifeDesc">شاهد روتيننا اليومي</p>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://wallpaperaccess.com/full/2470942.jpg" alt="شهادات العملاء">
+                            <div class="video-overlay">
+                                <button class="play-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 data-translate="testimonials">شهادات العملاء</h3>
+                        <p data-translate="testimonialsDesc">استمع إلى قصصهم</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Photos -->
+        <section class="customer-photos">
+            <div class="container">
+                <h2 class="section-title" data-translate="customerPhotos">صور العملاء</h2>
+                <p class="section-subtitle" data-translate="customerPhotosDesc">شاركنا صور كلابك السعيدة مع #LovingHolmesHK</p>
+                
+                <div class="instagram-feed">
+                    <div class="instagram-item">
+                        <img src="https://pic.i7lm.com/wp-content/uploads/2019/05/pexels-photo-164186.jpeg" alt="صورة عميل">
+                        <div class="instagram-overlay">
+                            <div class="instagram-info">
+                                <i class="fab fa-instagram"></i>
+                                <p>@customer1_dog</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instagram-item">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.q8XtH9K97Y93aJByQYrSpgHaEM?rs=1&pid=ImgDetMain&o=7&rm=3" alt="صورة عميل">
+                        <div class="instagram-overlay">
+                            <div class="instagram-info">
+                                <i class="fab fa-instagram"></i>
+                                <p>@customer2_pet</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instagram-item">
+                        <img src="https://img.freepik.com/premium-photo/dog-is-running-beach-with-ocean-background_865967-370766.jpg" alt="صورة عميل">
+                        <div class="instagram-overlay">
+                            <div class="instagram-info">
+                                <i class="fab fa-instagram"></i>
+                                <p>@customer3_doggy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instagram-item">
+                        <img src="https://static.vecteezy.com/system/resources/previews/042/152/020/large_2x/ai-generated-poster-with-a-dog-playing-on-a-beach-in-front-of-the-sea-free-photo.jpg" alt="صورة عميل">
+                        <div class="instagram-overlay">
+                            <div class="instagram-info">
+                                <i class="fab fa-instagram"></i>
+                                <p>@customer4_pup</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instagram-item">
+                        <img src="https://2.bp.blogspot.com/-pBpJGRCcCbU/WPjg0RnBE1I/AAAAAAAAxek/OVxHdYdaU7QhZ3QqT37OnalsFaT9nxE-gCLcB/s1600/1403216446_118.jpg" alt="صورة عميل">
+                        <div class="instagram-overlay">
+                            <div class="instagram-info">
+                                <i class="fab fa-instagram"></i>
+                                <p>@customer5_doggo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instagram-item">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.GdTMSzzlLSegAjA8wS68pwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="صورة عميل">
+                        <div class="instagram-overlay">
+                            <div class="instagram-info">
+                                <i class="fab fa-instagram"></i>
+                                <p>@customer6_canine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instagram-cta">
+                    <p data-translate="followUs">تابعنا على Instagram</p>
+                    <a href="#" class="btn btn-primary" data-translate="followInstagram">@LovingHolmesHK</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-translate="galleryCtaTitle">هل تريد رؤية المزيد؟</h2>
+                    <p data-translate="galleryCtaDesc">زرنا اليوم وشاهد بنفسك سعادة الكلاب في Loving Holmes</p>
+                    <a href="contact.html" class="btn btn-primary btn-large" data-translate="scheduleVisit">حجز زيارة</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="aboutFooter">عن Loving Holmes</h3>
+                    <p data-translate="footerDesc">فندق الكلاب الفاخر في هونغ كونغ نقدم أفضل رعاية لكلابك المحبوبة</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="quickLinks">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="about.html" data-translate="about">من نحن</a></li>
+                        <li><a href="services.html" data-translate="services">خدماتنا</a></li>
+                        <li><a href="packages.html" data-translate="packages">الحزم</a></li>
+                        <li><a href="contact.html" data-translate="contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="contactInfo">معلومات الاتصال</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-translate="address">هونغ كونغ، الصين</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-translate="phone">+852 1234 5678</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-translate="email">info@lovingholmes.com</span></p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="hours">ساعات العمل</h3>
+                    <p data-translate="hoursDesc">24/7 للخدمات البيطرية</p>
+                    <p data-translate="receptionHours">الاستقبال: 8:00 ص - 10:00 م</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Loving Holmes. <span data-translate="rights">جميع الحقوق محفوظة</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Additional translations for gallery page
+        const galleryTranslations = {
+            ar: {
+                galleryPageTitle: "معرض الصور",
+                galleryPageSubtitle: "شاهد لحظات سعادة الكلاب في Loving Holmes",
+                allPhotos: "كل الصور",
+                facilities: "المرافق",
+                happyDogs: "كلاب سعيدة",
+                grooming: "التجميل",
+                activities: "الأنشطة",
+                rooms: "الغرف",
+                receptionArea: "منطقة الاستقبال",
+                receptionDesc: "استقبال دافئ وودود لكلابك",
+                luxuryRooms: "غرف فاخرة",
+                roomsDesc: "غرف مريحة مع كل وسائل الراحة",
+                playground: "المراعي الخارجية",
+                playgroundDesc: "مساحات واسعة للعب والمرح",
+                happyMoment: "لحظة سعادة",
+                happyMomentDesc: "كلبنا يستمتع بوقته",
+                playtime: "وقت اللعب",
+                playtimeDesc: "الكلاب تتمتع باللعب معاً",
+                napTime: "وقت القيلولة",
+                napTimeDesc: "راحة مريحة بعد يوم نشط",
+                groomingSalon: "صالة التجميل",
+                groomingSalonDesc: "خدمات تجميل احترافية",
+                bathTime: "وقت الاستحمام",
+                bathTimeDesc: "استحمام لطيف ومنعش",
+                walkTime: "وقت التمشية",
+                walkTimeDesc: "جولات مشي يومية ممتعة",
+                trainingSession: "جلسة تدريب",
+                trainingSessionDesc: "تدريب ممتع وتفاعلي",
+                cozyRoom: "غرفة مريحة",
+                cozyRoomDesc: "مساحة شخصية دافئة",
+                restArea: "منطقة الراحة",
+                restAreaDesc: "مكان هادئ للاسترخاء",
+                viewImage: "عرض الصورة",
+                loadMore: "تحميل المزيد",
+                videoGallery: "معرض الفيديو",
+                hotelTour: "جولة في الفندق",
+                hotelTourDesc: "استكشف مرافقنا الرائعة",
+                dayInLife: "يوم في حياة كلب",
+                dayInLifeDesc: "شاهد روتيننا اليومي",
+                testimonials: "شهادات العملاء",
+                testimonialsDesc: "استمع إلى قصصهم",
+                customerPhotos: "صور العملاء",
+                customerPhotosDesc: "شاركنا صور كلابك السعيدة مع #LovingHolmesHK",
+                followUs: "تابعنا على Instagram",
+                followInstagram: "@LovingHolmesHK",
+                galleryCtaTitle: "هل تريد رؤية المزيد؟",
+                galleryCtaDesc: "زرنا اليوم وشاهد بنفسك سعادة الكلاب في Loving Holmes",
+                scheduleVisit: "حجز زيارة"
+            },
+            en: {
+                galleryPageTitle: "Photo Gallery",
+                galleryPageSubtitle: "See happy moments of dogs at Loving Holmes",
+                allPhotos: "All Photos",
+                facilities: "Facilities",
+                happyDogs: "Happy Dogs",
+                grooming: "Grooming",
+                activities: "Activities",
+                rooms: "Rooms",
+                receptionArea: "Reception Area",
+                receptionDesc: "Warm and friendly reception for your dogs",
+                luxuryRooms: "Luxury Rooms",
+                roomsDesc: "Comfortable rooms with all amenities",
+                playground: "Outdoor Playgrounds",
+                playgroundDesc: "Spacious areas for play and fun",
+                happyMoment: "Happy Moment",
+                happyMomentDesc: "Our dog enjoying his time",
+                playtime: "Playtime",
+                playtimeDesc: "Dogs enjoying play together",
+                napTime: "Nap Time",
+                napTimeDesc: "Comfortable rest after an active day",
+                groomingSalon: "Grooming Salon",
+                groomingSalonDesc: "Professional grooming services",
+                bathTime: "Bath Time",
+                bathTimeDesc: "Gentle and refreshing bath",
+                walkTime: "Walk Time",
+                walkTimeDesc: "Enjoyable daily walks",
+                trainingSession: "Training Session",
+                trainingSessionDesc: "Fun and interactive training",
+                cozyRoom: "Cozy Room",
+                cozyRoomDesc: "Warm personal space",
+                restArea: "Rest Area",
+                restAreaDesc: "Quiet place to relax",
+                viewImage: "View Image",
+                loadMore: "Load More",
+                videoGallery: "Video Gallery",
+                hotelTour: "Hotel Tour",
+                hotelTourDesc: "Explore our wonderful facilities",
+                dayInLife: "A Day in a Dog's Life",
+                dayInLifeDesc: "Watch our daily routine",
+                testimonials: "Customer Testimonials",
+                testimonialsDesc: "Listen to their stories",
+                customerPhotos: "Customer Photos",
+                customerPhotosDesc: "Share your happy dog photos with #LovingHolmesHK",
+                followUs: "Follow us on Instagram",
+                followInstagram: "@LovingHolmesHK",
+                galleryCtaTitle: "Want to see more?",
+                galleryCtaDesc: "Visit us today and see the happiness of dogs at Loving Holmes yourself",
+                scheduleVisit: "Schedule Visit"
+            }
+        };
+
+        // Merge with main translations
+        Object.assign(translations.ar, galleryTranslations.ar);
+        Object.assign(translations.en, galleryTranslations.en);
+
+        // Gallery functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Lightbox functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxDescription = document.getElementById('lightbox-description');
+            const closeLightbox = document.querySelector('.close-lightbox');
+            const viewButtons = document.querySelectorAll('.view-btn');
+
+            viewButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const galleryItem = this.closest('.gallery-item');
+                    const img = galleryItem.querySelector('img');
+                    const title = galleryItem.querySelector('h3').textContent;
+                    const description = galleryItem.querySelector('p').textContent;
+
+                    lightboxImage.src = img.src;
+                    lightboxImage.alt = img.alt;
+                    lightboxTitle.textContent = title;
+                    lightboxDescription.textContent = description;
+                    lightbox.style.display = 'flex';
+                });
+            });
+
+            closeLightbox.addEventListener('click', function() {
+                lightbox.style.display = 'none';
+            });
+
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+
+            // Load more functionality
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            let itemsLoaded = 12;
+
+            loadMoreBtn.addEventListener('click', function() {
+                // Simulate loading more images
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span data-translate="loading">جاري التحميل...</span>';
+                
+                setTimeout(() => {
+                    // In a real application, you would load more images from the server
+                    this.innerHTML = '<span data-translate="noMoreImages">لا توجد صور إضافية</span>';
+                    this.disabled = true;
+                }, 1500);
+            });
+
+            // Video play buttons
+            const playButtons = document.querySelectorAll('.play-btn');
+            playButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    alert('Video feature coming soon! Please check back later.');
+                });
+            });
+
+            // Instagram hover effects
+            const instagramItems = document.querySelectorAll('.instagram-item');
+            instagramItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.querySelector('.instagram-overlay').style.opacity = '1';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.querySelector('.instagram-overlay').style.opacity = '0';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

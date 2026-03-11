@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحزم - Loving Holmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1583337134407-607b00a27a4c?w=50&h=50&fit=crop&crop=center" alt="Loving Holmes Logo">
+                    <span class="logo-text" data-translate="logo">Loving Holmes</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-translate="home">الرئيسية</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="about">من نحن</a></li>
+                    <li><a href="services.html" class="nav-link" data-translate="services">خدماتنا</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-translate="facilities">المرافق</a></li>
+                    <li><a href="packages.html" class="nav-link active" data-translate="packages">الحزم</a></li>
+                    <li><a href="gallery.html" class="nav-link" data-translate="gallery">معرض الصور</a></li>
+                    <li><a href="contact.html" class="nav-link" data-translate="contact">اتصل بنا</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <div class="language-selector">
+                        <select id="languageSelect">
+                            <option value="ar">العربية</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+                    <div class="font-controls">
+                        <button id="decreaseFont" class="font-btn" aria-label="تصغير الخط">A-</button>
+                        <button id="increaseFont" class="font-btn" aria-label="تكبير الخط">A+</button>
+                    </div>
+                    <button id="speakBtn" class="speak-btn" aria-label="قراءة صوتية">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-translate="packagesPageTitle">الحزم والأسعار</h1>
+                <p data-translate="packagesPageSubtitle">اختر الحزمة المثالية لكلبك من بين خياراتنا المتنوعة</p>
+            </div>
+        </section>
+
+        <!-- Packages Overview -->
+        <section class="packages-overview">
+            <div class="container">
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <h2 data-translate="packagesOverview">نظرة عامة على الحزم</h2>
+                        <p data-translate="packagesOverviewDesc">في Loving Holmes، نقدم ثلاث حزم رئيسية مصممة لتلبية مختلف الاحتياجات والميزانيات. كل حزمة توفر مستوى مختلفاً من الرعاية والاهتمام لضمان سعادة كلابك.</p>
+                        <p data-translate="packagesOverviewDesc2">نقدم أيضاً حزم مخصصة للإقامات الطويلة أو للكلاب ذات المتطلبات الخاصة. اتصل بنا لترتيب أي حزم مخصصة.</p>
+                    </div>
+                    <div class="overview-image">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.pBzFqIfRWWuAPon_xMD4agHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="حزم الكلاب">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Package -->
+        <section class="premium-package">
+            <div class="container">
+                <div class="package-header">
+                    <h2 data-translate="premiumPackage">حزمة المميزة</h2>
+                    <p data-translate="premiumDesc">تجربة فاخرة للكلاب التي تستحق الأفضل</p>
+                </div>
+                <div class="package-card premium">
+                    <div class="package-badge" data-translate="mostPopular">الأكثر شعبية</div>
+                    <div class="package-content">
+                        <div class="package-info">
+                            <div class="package-price">
+                                <span class="currency">HKD</span>
+                                <span class="amount">450</span>
+                                <span class="period">/ يوم</span>
+                            </div>
+                            <div class="package-features">
+                                <h3 data-translate="premiumFeatures">المميزات:</h3>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> <span data-translate="premiumFeature1">المشي أربع مرات يومياً</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="premiumFeature2">ممارسة أربعة أنشطة يومياً</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="premiumFeature3">مساحة عشبية خاصة</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="premiumFeature4">تحديثات وصور يومية</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="premiumFeature5">مكافآت حسب الاتفاق</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="premiumFeature6">غرفة فاخرة مع تلفزيون</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="premiumFeature7">جلسة تجميل يومية</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="premiumFeature8">وجبات طعام فاخرة</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="premiumFeature9">وصول كاميرا 24/7</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="premiumFeature10">خدمة النقل المجانية</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="package-image">
+                            <img src="https://wallpaperaccess.com/full/2470942.jpg" alt="حزمة مميزة">
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <button class="btn btn-primary btn-large" data-translate="bookPremium">احجز الحزمة المميزة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classic Package -->
+        <section class="classic-package">
+            <div class="container">
+                <div class="package-header">
+                    <h2 data-translate="classicPackage">حزمة الكلاسيكية</h2>
+                    <p data-translate="classicDesc">رعاية ممتازة بقيمة ممتازة</p>
+                </div>
+                <div class="package-card classic">
+                    <div class="package-content">
+                        <div class="package-info">
+                            <div class="package-price">
+                                <span class="currency">HKD</span>
+                                <span class="amount">320</span>
+                                <span class="period">/ يوم</span>
+                            </div>
+                            <div class="package-features">
+                                <h3 data-translate="classicFeatures">المميزات:</h3>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> <span data-translate="classicFeature1">المشي ثلاث مرات يومياً</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="classicFeature2">ممارسة ثلاث أنشطة يومياً</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="classicFeature3">حظيرة لعب داخلية</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="classicFeature4">منطقة استرخاء مريحة</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="classicFeature5">جلسة حلاقة وتنظيف</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="classicFeature6">غرفة مريحة</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="classicFeature7">وجبات طعام متوازنة</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="classicFeature8">تحديثات يومية</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="classicFeature9">مراقبة 24/7</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="package-image">
+                            <img src="https://www.sqorebda3.com/vb/attachments/22826/" alt="حزمة كلاسيكية">
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <button class="btn btn-primary btn-large" data-translate="bookClassic">احجز الحزمة الكلاسيكية</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day Package -->
+        <section class="day-package">
+            <div class="container">
+                <div class="package-header">
+                    <h2 data-translate="dayPackage">حزمة اليوم</h2>
+                    <p data-translate="dayDesc">رعاية نهارية مثالية للكلاب النشطة</p>
+                </div>
+                <div class="package-card day">
+                    <div class="package-content">
+                        <div class="package-info">
+                            <div class="package-price">
+                                <span class="currency">HKD</span>
+                                <span class="amount">180</span>
+                                <span class="period">/ يوم</span>
+                            </div>
+                            <div class="package-features">
+                                <h3 data-translate="dayFeatures">المميزات:</h3>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> <span data-translate="dayFeature1">المشي مرتين يومياً</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="dayFeature2">منطقة لعب خارجية</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="dayFeature3">مسار رشاقة</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="dayFeature4">حفرة رمل للعب</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="dayFeature5">وجبة خفيفة صحية</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="dayFeature6">مياه عذبة طازجة</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="dayFeature7">إشراف مستمر</span></li>
+                                    <li><i class="fas fa-check"></i> <span data-translate="dayFeature8">منطقة راحة مظللة</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="package-image">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.EKwN825XK5Tn7xtIqjrcTwHaE7?w=2048&h=1365&rs=1&pid=ImgDetMain&o=7&rm=3" alt="حزمة اليوم">
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <button class="btn btn-primary btn-large" data-translate="bookDay">احجز حزمة اليوم</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Packages -->
+        <section class="custom-packages">
+            <div class="container">
+                <h2 class="section-title" data-translate="customPackages">حزم مخصصة</h2>
+                <div class="custom-content">
+                    <div class="custom-text">
+                        <h3 data-translate="customTitle">حزم مصممة خصيصاً لاحتياجاتك</h3>
+                        <p data-translate="customDesc1">هل لديك متطلبات خاصة؟ نقدم حزم مخصصة للإقامات الطويلة أو للكلاب ذات الاحتياجات الخاصة.</p>
+                        <p data-translate="customDesc2">سيعمل فريقنا معك لإنشاء خطة رعاية مخصصة تناسب تماماً احتياجات كلبك وميزانيتك.</p>
+                        <div class="custom-options">
+                            <div class="custom-option">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h4 data-translate="longStay">الإقامات الطويلة</h4>
+                                <p data-translate="longStayDesc">خصومات خاصة للإقامات التي تزيد عن أسبوع</p>
+                            </div>
+                            <div class="custom-option">
+                                <i class="fas fa-heart"></i>
+                                <h4 data-translate="specialNeeds">احتياجات خاصة</h4>
+                                <p data-translate="specialNeedsDesc">رعاية مخصصة للكلاب كبار السن أو المرضى</p>
+                            </div>
+                            <div class="custom-option">
+                                <i class="fas fa-users"></i>
+                                <h4 data-translate="multipleDogs">عدة كلاب</h4>
+                                <p data-translate="multipleDogsDesc">خصومات للعائلات التي لديها عدة كلاب</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-form">
+                        <h3 data-translate="requestCustom">اطلب حزمة مخصصة</h3>
+                        <form id="customPackageForm">
+                            <div class="form-group">
+                                <label for="dogName" data-translate="dogNameLabel">اسم الكلب:</label>
+                                <input type="text" id="dogName" name="dogName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dogBreed" data-translate="dogBreedLabel">سلالة الكلب:</label>
+                                <input type="text" id="dogBreed" name="dogBreed" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dogAge" data-translate="dogAgeLabel">عمر الكلب:</label>
+                                <input type="text" id="dogAge" name="dogAge" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="stayDuration" data-translate="stayDurationLabel">مدة الإقامة:</label>
+                                <select id="stayDuration" name="stayDuration" required>
+                                    <option value="" data-translate="selectDuration">اختر المدة</option>
+                                    <option value="1-3" data-translate="duration1">1-3 أيام</option>
+                                    <option value="4-7" data-translate="duration2">4-7 أيام</option>
+                                    <option value="8-14" data-translate="duration3">8-14 يوم</option>
+                                    <option value="15+" data-translate="duration4">15+ يوم</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="specialRequirements" data-translate="specialRequirementsLabel">متطلبات خاصة:</label>
+                                <textarea id="specialRequirements" name="specialRequirements" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large" data-translate="submitRequest">إرسال الطلب</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Price Comparison -->
+        <section class="price-comparison">
+            <div class="container">
+                <h2 class="section-title" data-translate="priceComparison">مقارنة الأسعار</h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th data-translate="feature">الميزة</th>
+                                <th data-translate="dayPackage">حزمة اليوم</th>
+                                <th data-translate="classicPackage">حزمة كلاسيكية</th>
+                                <th data-translate="premiumPackage">حزمة مميزة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-translate="walks">المشي اليومي</td>
+                                <td>2 مرات</td>
+                                <td>3 مرات</td>
+                                <td>4 مرات</td>
+                            </tr>
+                            <tr>
+                                <td data-translate="activities">الأنشطة اليومية</td>
+                                <td>2 نشاط</td>
+                                <td>3 نشاط</td>
+                                <td>4 نشاط</td>
+                            </tr>
+                            <tr>
+                                <td data-translate="meals">الوجبات</td>
+                                <td data-translate="lightSnack">وجبة خفيفة</td>
+                                <td data-translate="balancedMeals">وجبات متوازنة</td>
+                                <td data-translate="gourmetMeals">وجبات فاخرة</td>
+                            </tr>
+                            <tr>
+                                <td data-translate="grooming">التجميل</td>
+                                <td data-translate="notIncluded">غير مشمول</td>
+                                <td data-translate="basicGrooming">أساسي</td>
+                                <td data-translate="dailyGrooming">يومي</td>
+                            </tr>
+                            <tr>
+                                <td data-translate="accommodation">الإقامة</td>
+                                <td data-translate="dayCareOnly">رعاية نهارية فقط</td>
+                                <td data-translate="standardRoom">غرفة قياسية</td>
+                                <td data-translate="luxuryRoom">غرفة فاخرة</td>
+                            </tr>
+                            <tr>
+                                <td data-translate="updates">التحديثات</td>
+                                <td data-translate="basicUpdates">أساسية</td>
+                                <td data-translate="dailyUpdates">يومية</td>
+                                <td data-translate="photoUpdates">صور يومية</td>
+                            </tr>
+                            <tr>
+                                <td data-translate="transportation">النقل</td>
+                                <td data-translate="notIncluded">غير مشمول</td>
+                                <td data-translate="additionalFee">رسوم إضافية</td>
+                                <td data-translate="included">مشمول</td>
+                            </tr>
+                            <tr class="price-row">
+                                <td data-translate="dailyPrice">السعر اليومي</td>
+                                <td class="price">HKD 180</td>
+                                <td class="price">HKD 320</td>
+                                <td class="price">HKD 450</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-translate="packageCtaTitle">هل أنت مستعد لاختيار الحزمة المثالية؟</h2>
+                    <p data-translate="packageCtaDesc">اتصل بنا اليوم لمناقشة احتياجاتك وحجز مكان لكلبك</p>
+                    <a href="contact.html" class="btn btn-primary btn-large" data-translate="contactNow">اتصل بنا الآن</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="aboutFooter">عن Loving Holmes</h3>
+                    <p data-translate="footerDesc">فندق الكلاب الفاخر في هونغ كونغ نقدم أفضل رعاية لكلابك المحبوبة</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="quickLinks">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="about.html" data-translate="about">من نحن</a></li>
+                        <li><a href="services.html" data-translate="services">خدماتنا</a></li>
+                        <li><a href="packages.html" data-translate="packages">الحزم</a></li>
+                        <li><a href="contact.html" data-translate="contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="contactInfo">معلومات الاتصال</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-translate="address">هونغ كونغ، الصين</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-translate="phone">+852 1234 5678</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-translate="email">info@lovingholmes.com</span></p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="hours">ساعات العمل</h3>
+                    <p data-translate="hoursDesc">24/7 للخدمات البيطرية</p>
+                    <p data-translate="receptionHours">الاستقبال: 8:00 ص - 10:00 م</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Loving Holmes. <span data-translate="rights">جميع الحقوق محفوظة</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Additional translations for packages page
+        const packagesTranslations = {
+            ar: {
+                packagesPageTitle: "الحزم والأسعار",
+                packagesPageSubtitle: "اختر الحزمة المثالية لكلبك من بين خياراتنا المتنوعة",
+                packagesOverview: "نظرة عامة على الحزم",
+                packagesOverviewDesc: "في Loving Holmes، نقدم ثلاث حزم رئيسية مصممة لتلبية مختلف الاحتياجات والميزانيات. كل حزمة توفر مستوى مختلفاً من الرعاية والاهتمام لضمان سعادة كلابك.",
+                packagesOverviewDesc2: "نقدم أيضاً حزم مخصصة للإقامات الطويلة أو للكلاب ذات المتطلبات الخاصة. اتصل بنا لترتيب أي حزم مخصصة.",
+                premiumPackage: "حزمة المميزة",
+                premiumDesc: "تجربة فاخرة للكلاب التي تستحق الأفضل",
+                mostPopular: "الأكثر شعبية",
+                premiumFeatures: "المميزات:",
+                premiumFeature1: "المشي أربع مرات يومياً",
+                premiumFeature2: "ممارسة أربعة أنشطة يومياً",
+                premiumFeature3: "مساحة عشبية خاصة",
+                premiumFeature4: "تحديثات وصور يومية",
+                premiumFeature5: "مكافآت حسب الاتفاق",
+                premiumFeature6: "غرفة فاخرة مع تلفزيون",
+                premiumFeature7: "جلسة تجميل يومية",
+                premiumFeature8: "وجبات طعام فاخرة",
+                premiumFeature9: "وصول كاميرا 24/7",
+                premiumFeature10: "خدمة النقل المجانية",
+                bookPremium: "احجز الحزمة المميزة",
+                classicPackage: "حزمة الكلاسيكية",
+                classicDesc: "رعاية ممتازة بقيمة ممتازة",
+                classicFeatures: "المميزات:",
+                classicFeature1: "المشي ثلاث مرات يومياً",
+                classicFeature2: "ممارسة ثلاث أنشطة يومياً",
+                classicFeature3: "حظيرة لعب داخلية",
+                classicFeature4: "منطقة استرخاء مريحة",
+                classicFeature5: "جلسة حلاقة وتنظيف",
+                classicFeature6: "غرفة مريحة",
+                classicFeature7: "وجبات طعام متوازنة",
+                classicFeature8: "تحديثات يومية",
+                classicFeature9: "مراقبة 24/7",
+                bookClassic: "احجز الحزمة الكلاسيكية",
+                dayPackage: "حزمة اليوم",
+                dayDesc: "رعاية نهارية مثالية للكلاب النشطة",
+                dayFeatures: "المميزات:",
+                dayFeature1: "المشي مرتين يومياً",
+                dayFeature2: "منطقة لعب خارجية",
+                dayFeature3: "مسار رشاقة",
+                dayFeature4: "حفرة رمل للعب",
+                dayFeature5: "وجبة خفيفة صحية",
+                dayFeature6: "مياه عذبة طازجة",
+                dayFeature7: "إشراف مستمر",
+                dayFeature8: "منطقة راحة مظللة",
+                bookDay: "احجز حزمة اليوم",
+                customPackages: "حزم مخصصة",
+                customTitle: "حزم مصممة خصيصاً لاحتياجاتك",
+                customDesc1: "هل لديك متطلبات خاصة؟ نقدم حزم مخصصة للإقامات الطويلة أو للكلاب ذات الاحتياجات الخاصة.",
+                customDesc2: "سيعمل فريقنا معك لإنشاء خطة رعاية مخصصة تناسب تماماً احتياجات كلبك وميزانيتك.",
+                longStay: "الإقامات الطويلة",
+                longStayDesc: "خصومات خاصة للإقامات التي تزيد عن أسبوع",
+                specialNeeds: "احتياجات خاصة",
+                specialNeedsDesc: "رعاية مخصصة للكلاب كبار السن أو المرضى",
+                multipleDogs: "عدة كلاب",
+                multipleDogsDesc: "خصومات للعائلات التي لديها عدة كلاب",
+                requestCustom: "اطلب حزمة مخصصة",
+                dogNameLabel: "اسم الكلب:",
+                dogBreedLabel: "سلالة الكلب:",
+                dogAgeLabel: "عمر الكلب:",
+                stayDurationLabel: "مدة الإقامة:",
+                selectDuration: "اختر المدة",
+                duration1: "1-3 أيام",
+                duration2: "4-7 أيام",
+                duration3: "8-14 يوم",
+                duration4: "15+ يوم",
+                specialRequirementsLabel: "متطلبات خاصة:",
+                submitRequest: "إرسال الطلب",
+                priceComparison: "مقارنة الأسعار",
+                feature: "الميزة",
+                walks: "المشي اليومي",
+                activities: "الأنشطة اليومية",
+                meals: "الوجبات",
+                lightSnack: "وجبة خفيفة",
+                balancedMeals: "وجبات متوازنة",
+                gourmetMeals: "وجبات فاخرة",
+                grooming: "التجميل",
+                notIncluded: "غير مشمول",
+                basicGrooming: "أساسي",
+                dailyGrooming: "يومي",
+                accommodation: "الإقامة",
+                dayCareOnly: "رعاية نهارية فقط",
+                standardRoom: "غرفة قياسية",
+                luxuryRoom: "غرفة فاخرة",
+                updates: "التحديثات",
+                basicUpdates: "أساسية",
+                dailyUpdates: "يومية",
+                photoUpdates: "صور يومية",
+                transportation: "النقل",
+                additionalFee: "رسوم إضافية",
+                included: "مشمول",
+                dailyPrice: "السعر اليومي",
+                packageCtaTitle: "هل أنت مستعد لاختيار الحزمة المثالية؟",
+                packageCtaDesc: "اتصل بنا اليوم لمناقشة احتياجاتك وحجز مكان لكلبك",
+                contactNow: "اتصل بنا الآن"
+            },
+            en: {
+                packagesPageTitle: "Packages & Pricing",
+                packagesPageSubtitle: "Choose the perfect package for your dog from our diverse options",
+                packagesOverview: "Packages Overview",
+                packagesOverviewDesc: "At Loving Holmes, we offer three main packages designed to meet different needs and budgets. Each package provides a different level of care and attention to ensure your dogs' happiness.",
+                packagesOverviewDesc2: "We also offer custom packages for long stays or dogs with special requirements. Contact us to arrange any custom packages.",
+                premiumPackage: "Premium Package",
+                premiumDesc: "A luxury experience for dogs that deserve the best",
+                mostPopular: "Most Popular",
+                premiumFeatures: "Features:",
+                premiumFeature1: "Four walks daily",
+                premiumFeature2: "Four activities daily",
+                premiumFeature3: "Private grass area",
+                premiumFeature4: "Daily updates and photos",
+                premiumFeature5: "Treats as agreed",
+                premiumFeature6: "Luxury room with TV",
+                premiumFeature7: "Daily grooming session",
+                premiumFeature8: "Gourmet meals",
+                premiumFeature9: "24/7 camera access",
+                premiumFeature10: "Free transportation service",
+                bookPremium: "Book Premium Package",
+                classicPackage: "Classic Package",
+                classicDesc: "Excellent care at excellent value",
+                classicFeatures: "Features:",
+                classicFeature1: "Three walks daily",
+                classicFeature2: "Three activities daily",
+                classicFeature3: "Indoor playpen",
+                classicFeature4: "Comfortable relaxation area",
+                classicFeature5: "Grooming and cleaning session",
+                classicFeature6: "Comfortable room",
+                classicFeature7: "Balanced meals",
+                classicFeature8: "Daily updates",
+                classicFeature9: "24/7 monitoring",
+                bookClassic: "Book Classic Package",
+                dayPackage: "Day Package",
+                dayDesc: "Perfect daytime care for active dogs",
+                dayFeatures: "Features:",
+                dayFeature1: "Two walks daily",
+                dayFeature2: "Outdoor play area",
+                dayFeature3: "Agility course",
+                dayFeature4: "Sand digging pit",
+                dayFeature5: "Healthy snack",
+                dayFeature6: "Fresh drinking water",
+                dayFeature7: "Constant supervision",
+                dayFeature8: "Shaded rest area",
+                bookDay: "Book Day Package",
+                customPackages: "Custom Packages",
+                customTitle: "Packages designed specifically for your needs",
+                customDesc1: "Do you have special requirements? We offer custom packages for long stays or dogs with special needs.",
+                customDesc2: "Our team will work with you to create a customized care plan that perfectly fits your dog's needs and your budget.",
+                longStay: "Long Stays",
+                longStayDesc: "Special discounts for stays over a week",
+                specialNeeds: "Special Needs",
+                specialNeedsDesc: "Specialized care for senior or sick dogs",
+                multipleDogs: "Multiple Dogs",
+                multipleDogsDesc: "Discounts for families with multiple dogs",
+                requestCustom: "Request Custom Package",
+                dogNameLabel: "Dog Name:",
+                dogBreedLabel: "Dog Breed:",
+                dogAgeLabel: "Dog Age:",
+                stayDurationLabel: "Stay Duration:",
+                selectDuration: "Select Duration",
+                duration1: "1-3 days",
+                duration2: "4-7 days",
+                duration3: "8-14 days",
+                duration4: "15+ days",
+                specialRequirementsLabel: "Special Requirements:",
+                submitRequest: "Submit Request",
+                priceComparison: "Price Comparison",
+                feature: "Feature",
+                walks: "Daily Walks",
+                activities: "Daily Activities",
+                meals: "Meals",
+                lightSnack: "Light Snack",
+                balancedMeals: "Balanced Meals",
+                gourmetMeals: "Gourmet Meals",
+                grooming: "Grooming",
+                notIncluded: "Not Included",
+                basicGrooming: "Basic",
+                dailyGrooming: "Daily",
+                accommodation: "Accommodation",
+                dayCareOnly: "Daycare Only",
+                standardRoom: "Standard Room",
+                luxuryRoom: "Luxury Room",
+                updates: "Updates",
+                basicUpdates: "Basic",
+                dailyUpdates: "Daily",
+                photoUpdates: "Daily Photos",
+                transportation: "Transportation",
+                additionalFee: "Additional Fee",
+                included: "Included",
+                dailyPrice: "Daily Price",
+                packageCtaTitle: "Ready to choose the perfect package?",
+                packageCtaDesc: "Contact us today to discuss your needs and book a spot for your dog",
+                contactNow: "Contact Us Now"
+            }
+        };
+
+        // Merge with main translations
+        Object.assign(translations.ar, packagesTranslations.ar);
+        Object.assign(translations.en, packagesTranslations.en);
+
+        // Form submission handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const customPackageForm = document.getElementById('customPackageForm');
+            
+            if (customPackageForm) {
+                customPackageForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(customPackageForm);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Here you would normally send the data to a server
+                    // For now, we'll just show a success message
+                    alert('شكراً لطلبك! سنتصل بك خلال 24 ساعة لمناقشة الحزمة المخصصة.\n\nThank you for your request! We will contact you within 24 hours to discuss the custom package.');
+                    
+                    // Reset form
+                    customPackageForm.reset();
+                });
+            }
+
+            // Package booking buttons
+            const packageButtons = document.querySelectorAll('[data-translate^="book"]');
+            packageButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const packageType = this.getAttribute('data-translate').replace('book', '').toLowerCase();
+                    alert(`سيتم توجيهك إلى صفحة الحجز لحزمة ${packageType}.\n\nYou will be redirected to the booking page for the ${packageType} package.`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

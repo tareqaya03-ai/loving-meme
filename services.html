@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا - Loving Holmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1583337134407-607b00a27a4c?w=50&h=50&fit=crop&crop=center" alt="Loving Holmes Logo">
+                    <span class="logo-text" data-translate="logo">Loving Holmes</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-translate="home">الرئيسية</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="about">من نحن</a></li>
+                    <li><a href="services.html" class="nav-link active" data-translate="services">خدماتنا</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-translate="facilities">المرافق</a></li>
+                    <li><a href="packages.html" class="nav-link" data-translate="packages">الحزم</a></li>
+                    <li><a href="gallery.html" class="nav-link" data-translate="gallery">معرض الصور</a></li>
+                    <li><a href="contact.html" class="nav-link" data-translate="contact">اتصل بنا</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <div class="language-selector">
+                        <select id="languageSelect">
+                            <option value="ar">العربية</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+                    <div class="font-controls">
+                        <button id="decreaseFont" class="font-btn" aria-label="تصغير الخط">A-</button>
+                        <button id="increaseFont" class="font-btn" aria-label="تكبير الخط">A+</button>
+                    </div>
+                    <button id="speakBtn" class="speak-btn" aria-label="قراءة صوتية">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-translate="servicesPageTitle">خدماتنا</h1>
+                <p data-translate="servicesPageSubtitle">نقدم مجموعة شاملة من الخدمات المتخصصة لرعاية كلابك</p>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="container">
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <h2 data-translate="servicesOverview">نظرة عامة على خدماتنا</h2>
+                        <p data-translate="servicesOverviewDesc">في Loving Holmes، نقدم مجموعة واسعة من الخدمات المصممة لتلبية جميع احتياجات كلابك. من الإقامة الفاخرة إلى العناية اليومية، نحن نضمن أن كلابك تحصل على أفضل رعاية ممكنة.</p>
+                        <p data-translate="servicesOverviewDesc2">فريقنا من المحترفين مدرب على توفير رعاية شخصية لكل كلب، مع الأخذ في الاعتبار احتياجاتهم الفريدة وشخصياتهم.</p>
+                    </div>
+                    <div class="overview-image">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.GdTMSzzlLSegAjA8wS68pwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="خدمات الكلاب">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Services -->
+        <section class="main-services">
+            <div class="container">
+                <h2 class="section-title" data-translate="mainServices">خدماتنا الرئيسية</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 data-translate="boardingService">خدمة الإقامة</h3>
+                        <p data-translate="boardingDesc">إقامة مريحة وآمنة لكلابك مع رعاية على مدار 24 ساعة. نقدم غرف مجهزة بتدفئة وتبريد ومناطق لعب آمنة.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> <span data-translate="feature1">رعاية على مدار 24 ساعة</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="feature2">غرف مريحة مع تلفزيون</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="feature3">وجبات طعام مخصصة</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="feature4">ممارسة يومية منتظمة</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3 data-translate="groomingService">خدمة التجميل</h3>
+                        <p data-translate="groomingDesc">خدمات تجميل احترافية تشمل الحلاقة والاستحمام وتقليم الأظافر والعناية بالأسنان. نستخدم منتجات عالية الجودة وآمنة للكلاب.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> <span data-translate="groomingFeature1">حلاقة كاملة وتصميم</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="groomingFeature2">استحمام بالشامبو المخصص</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="groomingFeature3">تقليم الأظافر والعناية بالأذنين</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="groomingFeature4">تنظيف الأسنان</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 data-translate="trainingService">خدمة التدريب</h3>
+                        <p data-translate="trainingDesc">برامج تدريب احترافية لتطوير سلوك كلابك وتعليمهم الأوامر الأساسية والمتقدمة. نقدم تدريباً شخصياً لكل كلب.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> <span data-translate="trainingFeature1">تدريب على الطاعة الأساسية</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="trainingFeature2">تصحيح السلوك المشاكل</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="trainingFeature3">تدريب النشاط والحيوية</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="trainingFeature4">تدريب الكلاب الصغيرة</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 data-translate="veterinaryService">خدمات بيطرية</h3>
+                        <p data-translate="veterinaryDesc">خدمات بيطرية على مدار 24 ساعة تشامل الفحوصات الدورية والتطعيمات والعلاج الطبي الطارئ.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> <span data-translate="vetFeature1">فحوصات دورية شاملة</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="vetFeature2">التطعيمات والوقاية</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="vetFeature3">العلاج الطبي الطارئ</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="vetFeature4">الجراحة عند الحاجة</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3 data-translate="transportService">خدمة النقل</h3>
+                        <p data-translate="transportDesc">خدمة نقل آمنة ومريحة لكلابك من وإلى الفندق. نستخدم مركبات مجهزة خصيصاً لنقل الحيوانات الأليفة.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> <span data-translate="transportFeature1">نقل من الباب إلى الباب</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="transportFeature2">مركبات مجهزة ومكيفة</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="transportFeature3">سائقون مدربون على التعامل مع الحيوانات</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="transportFeature4">جدولة مرنة</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <h3 data-translate="retailService">المتجر</h3>
+                        <p data-translate="retailDesc">متجرنا يقدم مجموعة واسعة من منتجات الكلاب عالية الجودة بما في ذلك الطعام والألعاب والإكسسوارات ومنتجات العناية.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> <span data-translate="retailFeature1">طعام عضوي ومخصص</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="retailFeature2">ألعاب تعليمية وترفيهية</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="retailFeature3">إكسسوارات وأطواق</span></li>
+                            <li><i class="fas fa-check"></i> <span data-translate="retailFeature4">منتجات العناية والصحة</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Services -->
+        <section class="additional-services">
+            <div class="container">
+                <h2 class="section-title" data-translate="additionalServices">خدمات إضافية</h2>
+                <div class="additional-services-grid">
+                    <div class="additional-service">
+                        <div class="service-icon-small">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3 data-translate="photographyService">تصوير احترافي</h3>
+                        <p data-translate="photographyDesc">جلسات تصوير احترافية لكلابك مع مصورين متخصصين في تصوير الحيوانات الأليفة.</p>
+                    </div>
+
+                    <div class="additional-service">
+                        <div class="service-icon-small">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h3 data-translate="celebrationService">تنظيم الاحتفالات</h3>
+                        <p data-translate="celebrationDesc">ننظم احتفالات أعياد الميلاد والمناسبات الخاصة لكلابك مع كعك وديكورات وهدايا.</p>
+                    </div>
+
+                    <div class="additional-service">
+                        <div class="service-icon-small">
+                            <i class="fas fa-swimming-pool"></i>
+                        </div>
+                        <h3 data-translate="hydrotherapyService">العلاج المائي</h3>
+                        <p data-translate="hydrotherapyDesc">جلسات علاج مائي للكلاب التي تحتاج إلى علاج طبيعي أو تمارين منخفضة التأثير.</p>
+                    </div>
+
+                    <div class="additional-service">
+                        <div class="service-icon-small">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-translate="daycareService">رعاية نهارية</h3>
+                        <p data-translate="daycareDesc">خدمة رعاية نهارية للكلاب مع أنشطة مشوقة وفرص للعب والتفاعل مع الكلاب الأخرى.</p>
+                    </div>
+
+                    <div class="additional-service">
+                        <div class="service-icon-small">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3 data-translate="geneticService">فحص جيني</h3>
+                        <p data-translate="geneticDesc">فحوصات جينية للكشف عن الأمراض الوراثية وتحديد السلالة وتوفير توصيات الرعاية.</p>
+                    </div>
+
+                    <div class="additional-service">
+                        <div class="service-icon-small">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 data-translate="nutritionService">استشارات التغذية</h3>
+                        <p data-translate="nutritionDesc">استشارات غذائية مع خبراء تغذية الحيوانات لتطوير خطط غذائية مخصصة لكل كلب.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Process -->
+        <section class="service-process">
+            <div class="container">
+                <h2 class="section-title" data-translate="serviceProcess">عملية الخدمة</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-translate="step1Title">الحجز الأولي</h3>
+                            <p data-translate="step1Desc">اتصل بنا أو احجز عبر الموقع لتحديد موعد وتحديد الخدمات المطلوبة.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-translate="step2Title">التقييم الأولي</h3>
+                            <p data-translate="step2Desc">نقوم بتقييم كل كلب لتحديد احتياجاته الفريدة وتطوير خطة رعاية مخصصة.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-translate="step3Title">تقديم الخدمة</h3>
+                            <p data-translate="step3Desc">فريقنا المحترف يقدم الخدمات المطلوبة مع الاهتمام بكل تفصيل.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 data-translate="step4Title">المتابعة</h3>
+                            <p data-translate="step4Desc">نوفر تحديثات منتظمة ونقوم بتقييم رضا العملاء بعد الخدمة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-translate="serviceCtaTitle">هل أنت مستعد لتجربة خدماتنا؟</h2>
+                    <p data-translate="serviceCtaDesc">احجز استشارة مجانية اليوم واكتشف كيف يمكننا مساعدة كلبك</p>
+                    <a href="contact.html" class="btn btn-primary btn-large" data-translate="bookConsultation">احجز استشارة</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="aboutFooter">عن Loving Holmes</h3>
+                    <p data-translate="footerDesc">فندق الكلاب الفاخر في هونغ كونغ نقدم أفضل رعاية لكلابك المحبوبة</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="quickLinks">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="about.html" data-translate="about">من نحن</a></li>
+                        <li><a href="services.html" data-translate="services">خدماتنا</a></li>
+                        <li><a href="packages.html" data-translate="packages">الحزم</a></li>
+                        <li><a href="contact.html" data-translate="contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="contactInfo">معلومات الاتصال</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-translate="address">هونغ كونغ، الصين</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-translate="phone">+852 1234 5678</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-translate="email">info@lovingholmes.com</span></p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="hours">ساعات العمل</h3>
+                    <p data-translate="hoursDesc">24/7 للخدمات البيطرية</p>
+                    <p data-translate="receptionHours">الاستقبال: 8:00 ص - 10:00 م</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Loving Holmes. <span data-translate="rights">جميع الحقوق محفوظة</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Additional translations for services page
+        const servicesTranslations = {
+            ar: {
+                servicesPageTitle: "خدماتنا",
+                servicesPageSubtitle: "نقدم مجموعة شاملة من الخدمات المتخصصة لرعاية كلابك",
+                servicesOverview: "نظرة عامة على خدماتنا",
+                servicesOverviewDesc: "في Loving Holmes، نقدم مجموعة واسعة من الخدمات المصممة لتلبية جميع احتياجات كلابك. من الإقامة الفاخرة إلى العناية اليومية، نحن نضمن أن كلابك تحصل على أفضل رعاية ممكنة.",
+                servicesOverviewDesc2: "فريقنا من المحترفين مدرب على توفير رعاية شخصية لكل كلب، مع الأخذ في الاعتبار احتياجاتهم الفريدة وشخصياتهم.",
+                mainServices: "خدماتنا الرئيسية",
+                boardingService: "خدمة الإقامة",
+                boardingDesc: "إقامة مريحة وآمنة لكلابك مع رعاية على مدار 24 ساعة. نقدم غرف مجهزة بتدفئة وتبريد ومناطق لعب آمنة.",
+                feature1: "رعاية على مدار 24 ساعة",
+                feature2: "غرف مريحة مع تلفزيون",
+                feature3: "وجبات طعام مخصصة",
+                feature4: "ممارسة يومية منتظمة",
+                groomingService: "خدمة التجميل",
+                groomingDesc: "خدمات تجميل احترافية تشمل الحلاقة والاستحمام وتقليم الأظافر والعناية بالأسنان. نستخدم منتجات عالية الجودة وآمنة للكلاب.",
+                groomingFeature1: "حلاقة كاملة وتصميم",
+                groomingFeature2: "استحمام بالشامبو المخصص",
+                groomingFeature3: "تقليم الأظافر والعناية بالأذنين",
+                groomingFeature4: "تنظيف الأسنان",
+                trainingService: "خدمة التدريب",
+                trainingDesc: "برامج تدريب احترافية لتطوير سلوك كلابك وتعليمهم الأوامر الأساسية والمتقدمة. نقدم تدريباً شخصياً لكل كلب.",
+                trainingFeature1: "تدريب على الطاعة الأساسية",
+                trainingFeature2: "تصحيح السلوك المشاكل",
+                trainingFeature3: "تدريب النشاط والحيوية",
+                trainingFeature4: "تدريب الكلاب الصغيرة",
+                veterinaryService: "خدمات بيطرية",
+                veterinaryDesc: "خدمات بيطرية على مدار 24 ساعة تشامل الفحوصات الدورية والتطعيمات والعلاج الطبي الطارئ.",
+                vetFeature1: "فحوصات دورية شاملة",
+                vetFeature2: "التطعيمات والوقاية",
+                vetFeature3: "العلاج الطبي الطارئ",
+                vetFeature4: "الجراحة عند الحاجة",
+                transportService: "خدمة النقل",
+                transportDesc: "خدمة نقل آمنة ومريحة لكلابك من وإلى الفندق. نستخدم مركبات مجهزة خصيصاً لنقل الحيوانات الأليفة.",
+                transportFeature1: "نقل من الباب إلى الباب",
+                transportFeature2: "مركبات مجهزة ومكيفة",
+                transportFeature3: "سائقون مدربون على التعامل مع الحيوانات",
+                transportFeature4: "جدولة مرنة",
+                retailService: "المتجر",
+                retailDesc: "متجرنا يقدم مجموعة واسعة من منتجات الكلاب عالية الجودة بما في ذلك الطعام والألعاب والإكسسوارات ومنتجات العناية.",
+                retailFeature1: "طعام عضوي ومخصص",
+                retailFeature2: "ألعاب تعليمية وترفيهية",
+                retailFeature3: "إكسسوارات وأطواق",
+                retailFeature4: "منتجات العناية والصحة",
+                additionalServices: "خدمات إضافية",
+                photographyService: "تصوير احترافي",
+                photographyDesc: "جلسات تصوير احترافية لكلابك مع مصورين متخصصين في تصوير الحيوانات الأليفة.",
+                celebrationService: "تنظيم الاحتفالات",
+                celebrationDesc: "ننظم احتفالات أعياد الميلاد والمناسبات الخاصة لكلابك مع كعك وديكورات وهدايا.",
+                hydrotherapyService: "العلاج المائي",
+                hydrotherapyDesc: "جلسات علاج مائي للكلاب التي تحتاج إلى علاج طبيعي أو تمارين منخفضة التأثير.",
+                daycareService: "رعاية نهارية",
+                daycareDesc: "خدمة رعاية نهارية للكلاب مع أنشطة مشوقة وفرص للعب والتفاعل مع الكلاب الأخرى.",
+                geneticService: "فحص جيني",
+                geneticDesc: "فحوصات جينية للكشف عن الأمراض الوراثية وتحديد السلالة وتوفير توصيات الرعاية.",
+                nutritionService: "استشارات التغذية",
+                nutritionDesc: "استشارات غذائية مع خبراء تغذية الحيوانات لتطوير خطط غذائية مخصصة لكل كلب.",
+                serviceProcess: "عملية الخدمة",
+                step1Title: "الحجز الأولي",
+                step1Desc: "اتصل بنا أو احجز عبر الموقع لتحديد موعد وتحديد الخدمات المطلوبة.",
+                step2Title: "التقييم الأولي",
+                step2Desc: "نقوم بتقييم كل كلب لتحديد احتياجاته الفريدة وتطوير خطة رعاية مخصصة.",
+                step3Title: "تقديم الخدمة",
+                step3Desc: "فريقنا المحترف يقدم الخدمات المطلوبة مع الاهتمام بكل تفصيل.",
+                step4Title: "المتابعة",
+                step4Desc: "نوفر تحديثات منتظمة ونقوم بتقييم رضا العملاء بعد الخدمة.",
+                serviceCtaTitle: "هل أنت مستعد لتجربة خدماتنا؟",
+                serviceCtaDesc: "احجز استشارة مجانية اليوم واكتشف كيف يمكننا مساعدة كلبك",
+                bookConsultation: "احجز استشارة"
+            },
+            en: {
+                servicesPageTitle: "Our Services",
+                servicesPageSubtitle: "We offer a comprehensive range of specialized services for your dogs",
+                servicesOverview: "Services Overview",
+                servicesOverviewDesc: "At Loving Holmes, we offer a wide range of services designed to meet all your dogs' needs. From luxury accommodation to daily care, we ensure your dogs receive the best possible care.",
+                servicesOverviewDesc2: "Our team of professionals is trained to provide personalized care for each dog, taking into account their unique needs and personalities.",
+                mainServices: "Our Main Services",
+                boardingService: "Boarding Service",
+                boardingDesc: "Comfortable and safe accommodation for your dogs with 24-hour care. We offer rooms equipped with heating, cooling, and safe play areas.",
+                feature1: "24-hour care",
+                feature2: "Comfortable rooms with TV",
+                feature3: "Customized meals",
+                feature4: "Regular daily exercise",
+                groomingService: "Grooming Service",
+                groomingDesc: "Professional grooming services including haircuts, bathing, nail trimming, and dental care. We use high-quality, dog-safe products.",
+                groomingFeature1: "Full grooming and styling",
+                groomingFeature2: "Bathing with specialized shampoo",
+                groomingFeature3: "Nail trimming and ear care",
+                groomingFeature4: "Dental cleaning",
+                trainingService: "Training Service",
+                trainingDesc: "Professional training programs to develop your dogs' behavior and teach them basic and advanced commands. We provide personalized training for each dog.",
+                trainingFeature1: "Basic obedience training",
+                trainingFeature2: "Behavioral problem correction",
+                trainingFeature3: "Agility and activity training",
+                trainingFeature4: "Puppy training",
+                veterinaryService: "Veterinary Services",
+                veterinaryDesc: "24-hour veterinary services including regular check-ups, vaccinations, and emergency medical treatment.",
+                vetFeature1: "Comprehensive regular check-ups",
+                vetFeature2: "Vaccinations and prevention",
+                vetFeature3: "Emergency medical treatment",
+                vetFeature4: "Surgery when needed",
+                transportService: "Transportation Service",
+                transportDesc: "Safe and comfortable transportation for your dogs to and from the hotel. We use specially equipped vehicles for pet transport.",
+                transportFeature1: "Door-to-door transport",
+                transportFeature2: "Equipped and air-conditioned vehicles",
+                transportFeature3: "Drivers trained in animal handling",
+                transportFeature4: "Flexible scheduling",
+                retailService: "Retail Shop",
+                retailDesc: "Our shop offers a wide range of high-quality dog products including food, toys, accessories, and care products.",
+                retailFeature1: "Organic and specialized food",
+                retailFeature2: "Educational and entertaining toys",
+                retailFeature3: "Accessories and collars",
+                retailFeature4: "Care and health products",
+                additionalServices: "Additional Services",
+                photographyService: "Professional Photography",
+                photographyDesc: "Professional photography sessions for your dogs with photographers specializing in pet photography.",
+                celebrationService: "Event Organization",
+                celebrationDesc: "We organize birthday parties and special occasions for your dogs with cakes, decorations, and gifts.",
+                hydrotherapyService: "Hydrotherapy",
+                hydrotherapyDesc: "Hydrotherapy sessions for dogs needing physical therapy or low-impact exercise.",
+                daycareService: "Daycare Service",
+                daycareDesc: "Daycare service for dogs with exciting activities and opportunities for play and interaction with other dogs.",
+                geneticService: "Genetic Testing",
+                geneticDesc: "Genetic testing to detect hereditary diseases, determine breed, and provide care recommendations.",
+                nutritionService: "Nutrition Consultations",
+                nutritionDesc: "Nutrition consultations with animal nutrition experts to develop customized diet plans for each dog.",
+                serviceProcess: "Service Process",
+                step1Title: "Initial Booking",
+                step1Desc: "Contact us or book online to schedule an appointment and specify required services.",
+                step2Title: "Initial Assessment",
+                step2Desc: "We assess each dog to determine their unique needs and develop a customized care plan.",
+                step3Title: "Service Delivery",
+                step3Desc: "Our professional team delivers the required services with attention to every detail.",
+                step4Title: "Follow-up",
+                step4Desc: "We provide regular updates and evaluate customer satisfaction after the service.",
+                serviceCtaTitle: "Ready to experience our services?",
+                serviceCtaDesc: "Book a free consultation today and discover how we can help your dog",
+                bookConsultation: "Book Consultation"
+            }
+        };
+
+        // Merge with main translations
+        Object.assign(translations.ar, servicesTranslations.ar);
+        Object.assign(translations.en, servicesTranslations.en);
+    </script>
+</body>
+</html>

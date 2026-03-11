@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - Loving Holmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1583337134407-607b00a27a4c?w=50&h=50&fit=crop&crop=center" alt="Loving Holmes Logo">
+                    <span class="logo-text" data-translate="logo">Loving Holmes</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-translate="home">الرئيسية</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="about">من نحن</a></li>
+                    <li><a href="services.html" class="nav-link" data-translate="services">خدماتنا</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-translate="facilities">المرافق</a></li>
+                    <li><a href="packages.html" class="nav-link" data-translate="packages">الحزم</a></li>
+                    <li><a href="gallery.html" class="nav-link" data-translate="gallery">معرض الصور</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-translate="contact">اتصل بنا</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <div class="language-selector">
+                        <select id="languageSelect">
+                            <option value="ar">العربية</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+                    <div class="font-controls">
+                        <button id="decreaseFont" class="font-btn" aria-label="تصغير الخط">A-</button>
+                        <button id="increaseFont" class="font-btn" aria-label="تكبير الخط">A+</button>
+                    </div>
+                    <button id="speakBtn" class="speak-btn" aria-label="قراءة صوتية">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-translate="contactPageTitle">اتصل بنا</h1>
+                <p data-translate="contactPageSubtitle">نحن هنا للإجابة على جميع استفساراتك</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 data-translate="getInTouch">تواصل معنا</h2>
+                        <p data-translate="contactDesc">نحن نقدر اهتمامك بـ Loving Holmes ونتطلع إلى مساعدتك في توفير أفضل رعاية لكلبك. لا تتردد في الاتصال بنا بأي طريقة تناسبك.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3 data-translate="phoneContact">الهاتف</h3>
+                                    <p><span data-translate="mainPhone">+852 1234 5678</span></p>
+                                    <p><span data-translate="emergencyPhone">+852 9876 5432 (طوارئ)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3 data-translate="emailContact">البريد الإلكتروني</h3>
+                                    <p><span data-translate="mainEmail">info@lovingholmes.com</span></p>
+                                    <p><span data-translate="bookingEmail">bookings@lovingholmes.com</span></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3 data-translate="addressContact">العنوان</h3>
+                                    <p><span data-translate="fullAddress">شارع النخيل 123، هونغ كونغ</span></p>
+                                    <p><span data-translate="district">حي وسط هونغ كونغ</span></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3 data-translate="hoursContact">ساعات العمل</h3>
+                                    <p><span data-translate="receptionHours">الاستقبال: 8:00 ص - 10:00 م</span></p>
+                                    <p><span data-translate="veterinaryHours">خدمات بيطرية: 24/7</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-contact">
+                            <h3 data-translate="followUsSocial">تابعنا على وسائل التواصل الاجتماعي</h3>
+                            <div class="social-links-large">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook"></i>
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>YouTube</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <h2 data-translate="sendUsMessage">أرسل لنا رسالة</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" data-translate="firstNameLabel">الاسم الأول:</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" data-translate="lastNameLabel">الاسم الأخير:</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" data-translate="emailLabel">البريد الإلكتروني:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" data-translate="phoneLabel">رقم الهاتف:</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" data-translate="subjectLabel">الموضوع:</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" data-translate="selectSubject">اختر الموضوع</option>
+                                    <option value="booking" data-translate="bookingOption">حجز</option>
+                                    <option value="inquiry" data-translate="inquiryOption">استفسار عام</option>
+                                    <option value="complaint" data-translate="complaintOption">شكوى</option>
+                                    <option value="compliment" data-translate="complimentOption">مديح</option>
+                                    <option value="partnership" data-translate="partnershipOption">شراكة</option>
+                                    <option value="other" data-translate="otherOption">أخرى</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" data-translate="messageLabel">الرسالة:</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span data-translate="newsletterCheckbox">أود تلقي النشرة الإخبارية والعروض الخاصة</span>
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span data-translate="privacyCheckbox">أوافق على سياسة الخصوصية وشروط الاستخدام</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large" data-translate="sendMessage">إرسال الرسالة</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="findUs">اعثر علينا</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <img src="https://2.bp.blogspot.com/-pBpJGRCcCbU/WPjg0RnBE1I/AAAAAAAAxek/OVxHdYdaU7QhZ3QqT37OnalsFaT9nxE-gCLcB/s1600/1403216446_118.jpg" alt="خريطة هونغ كونغ">
+                        <div class="map-overlay">
+                            <div class="map-info">
+                                <h3 data-translate="ourLocation">موقعنا</h3>
+                                <p data-translate="locationDesc">شارع النخيل 123، حي وسط هونغ كونغ</p>
+                                <button class="btn btn-primary" data-translate="getDirections">احصل على الاتجاهات</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="faqTitle">الأسئلة الشائعة</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-translate="faq1Question">ما هي ساعات عملكم؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-translate="faq1Answer">الاستقبال مفتوح من 8:00 صباحاً إلى 10:00 مساءً يومياً. خدماتنا البيطرية متاحة على مدار 24 ساعة، 7 أيام في الأسبوع للطوارئ.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-translate="faq2Question">هل أحتاج لحجز مسبق؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-translate="faq2Answer">نوصي بشدة بالحجز المسبق، خاصة خلال مواسم الذروة والعطلات. يمكنك الحجز عبر الهاتف أو البريد الإلكتروني أو عبر موقعنا.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-translate="faq3Question">ما هي المتطلبات الصحية للكلاب؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-translate="faq3Answer">يجب أن تكون جميع الكلاب محصنة ضد الأمراض الرئيسية وتكون سجلات التطعيم محدثة. نطلب أيضاً فحصاً للبراغيث والديدان قبل الإقامة.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-translate="faq4Question">هل يمكنني زيارة كلبي أثناء إقامته؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-translate="faq4Answer">نعم، نرحب بالزيارات خلال ساعات العمل. نوصي بالاتصال مسبقاً لترتيب موعد مناسب لضمان عدم إزعاج الكلاب الأخرى.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-translate="faq5Question">هل تقدمون خدمة النقل؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-translate="faq5Answer">نعم، نقدم خدمة النقل من وإلى الفندق. تتوفر خدمة النقل المجانية مع الحزمة المميزة، ويمكن إضافتها إلى الحزم الأخرى برسوم إضافية.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-translate="faq6Question">ماذا يحدث في حالة الطوارئ الطبية؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-translate="faq6Answer">لدينا عيادة بيطرية داخل الموقع مع طاقم طبي متوفر على مدار 24 ساعة. في حالات الطوارئ، نتصل فوراً بالطبيب البيطري ونتخذ الإجراءات اللازمة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contact -->
+        <section class="emergency-contact">
+            <div class="container">
+                <div class="emergency-content">
+                    <div class="emergency-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="emergency-info">
+                        <h2 data-translate="emergencyTitle">اتصالات الطوارئ</h2>
+                        <p data-translate="emergencyDesc">لأي طوارئ تتعلق بصحة الكلب أو سلامته، اتصل بنا على مدار 24 ساعة:</p>
+                        <div class="emergency-number">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+852 9876 5432</span>
+                        </div>
+                        <p data-translate="emergencyNote">هذا الرقم مخصص للطوارئ فقط. للاستفسارات العامة، يرجى استخدام رقم الهاتف الرئيسي.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-translate="contactCtaTitle">هل أنت مستعد لتجربة Loving Holmes؟</h2>
+                    <p data-translate="contactCtaDesc">اتصل بنا اليوم لحجز موعد أو لمناقشة احتياجات كلبك</p>
+                    <a href="tel:+85212345678" class="btn btn-primary btn-large" data-translate="callNow">اتصل الآن</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="aboutFooter">عن Loving Holmes</h3>
+                    <p data-translate="footerDesc">فندق الكلاب الفاخر في هونغ كونغ نقدم أفضل رعاية لكلابك المحبوبة</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="quickLinks">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="about.html" data-translate="about">من نحن</a></li>
+                        <li><a href="services.html" data-translate="services">خدماتنا</a></li>
+                        <li><a href="packages.html" data-translate="packages">الحزم</a></li>
+                        <li><a href="contact.html" data-translate="contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="contactInfo">معلومات الاتصال</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-translate="address">هونغ كونغ، الصين</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-translate="phone">+852 1234 5678</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-translate="email">info@lovingholmes.com</span></p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="hours">ساعات العمل</h3>
+                    <p data-translate="hoursDesc">24/7 للخدمات البيطرية</p>
+                    <p data-translate="receptionHours">الاستقبال: 8:00 ص - 10:00 م</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Loving Holmes. <span data-translate="rights">جميع الحقوق محفوظة</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Additional translations for contact page
+        const contactTranslations = {
+            ar: {
+                contactPageTitle: "اتصل بنا",
+                contactPageSubtitle: "نحن هنا للإجابة على جميع استفساراتك",
+                getInTouch: "تواصل معنا",
+                contactDesc: "نحن نقدر اهتمامك بـ Loving Holmes ونتطلع إلى مساعدتك في توفير أفضل رعاية لكلبك. لا تتردد في الاتصال بنا بأي طريقة تناسبك.",
+                phoneContact: "الهاتف",
+                mainPhone: "+852 1234 5678",
+                emergencyPhone: "+852 9876 5432 (طوارئ)",
+                emailContact: "البريد الإلكتروني",
+                mainEmail: "info@lovingholmes.com",
+                bookingEmail: "bookings@lovingholmes.com",
+                addressContact: "العنوان",
+                fullAddress: "شارع النخيل 123، هونغ كونغ",
+                district: "حي وسط هونغ كونغ",
+                hoursContact: "ساعات العمل",
+                receptionHours: "الاستقبال: 8:00 ص - 10:00 م",
+                veterinaryHours: "خدمات بيطرية: 24/7",
+                followUsSocial: "تابعنا على وسائل التواصل الاجتماعي",
+                sendUsMessage: "أرسل لنا رسالة",
+                firstNameLabel: "الاسم الأول:",
+                lastNameLabel: "الاسم الأخير:",
+                emailLabel: "البريد الإلكتروني:",
+                phoneLabel: "رقم الهاتف:",
+                subjectLabel: "الموضوع:",
+                selectSubject: "اختر الموضوع",
+                bookingOption: "حجز",
+                inquiryOption: "استفسار عام",
+                complaintOption: "شكوى",
+                complimentOption: "مديح",
+                partnershipOption: "شراكة",
+                otherOption: "أخرى",
+                messageLabel: "الرسالة:",
+                newsletterCheckbox: "أود تلقي النشرة الإخبارية والعروض الخاصة",
+                privacyCheckbox: "أوافق على سياسة الخصوصية وشروط الاستخدام",
+                sendMessage: "إرسال الرسالة",
+                findUs: "اعثر علينا",
+                ourLocation: "موقعنا",
+                locationDesc: "شارع النخيل 123، حي وسط هونغ كونغ",
+                getDirections: "احصل على الاتجاهات",
+                faqTitle: "الأسئلة الشائعة",
+                faq1Question: "ما هي ساعات عملكم؟",
+                faq1Answer: "الاستقبال مفتوح من 8:00 صباحاً إلى 10:00 مساءً يومياً. خدماتنا البيطرية متاحة على مدار 24 ساعة، 7 أيام في الأسبوع للطوارئ.",
+                faq2Question: "هل أحتاج لحجز مسبق؟",
+                faq2Answer: "نوصي بشدة بالحجز المسبق، خاصة خلال مواسم الذروة والعطلات. يمكنك الحجز عبر الهاتف أو البريد الإلكتروني أو عبر موقعنا.",
+                faq3Question: "ما هي المتطلبات الصحية للكلاب؟",
+                faq3Answer: "يجب أن تكون جميع الكلاب محصنة ضد الأمراض الرئيسية وتكون سجلات التطعيم محدثة. نطلب أيضاً فحصاً للبراغيث والديدان قبل الإقامة.",
+                faq4Question: "هل يمكنني زيارة كلبي أثناء إقامته؟",
+                faq4Answer: "نعم، نرحب بالزيارات خلال ساعات العمل. نوصي بالاتصال مسبقاً لترتيب موعد مناسب لضمان عدم إزعاج الكلاب الأخرى.",
+                faq5Question: "هل تقدمون خدمة النقل؟",
+                faq5Answer: "نعم، نقدم خدمة النقل من وإلى الفندق. تتوفر خدمة النقل المجانية مع الحزمة المميزة، ويمكن إضافتها إلى الحزم الأخرى برسوم إضافية.",
+                faq6Question: "ماذا يحدث في حالة الطوارئ الطبية؟",
+                faq6Answer: "لدينا عيادة بيطرية داخل الموقع مع طاقم طبي متوفر على مدار 24 ساعة. في حالات الطوارئ، نتصل فوراً بالطبيب البيطري ونتخذ الإجراءات اللازمة.",
+                emergencyTitle: "اتصالات الطوارئ",
+                emergencyDesc: "لأي طوارئ تتعلق بصحة الكلب أو سلامته، اتصل بنا على مدار 24 ساعة:",
+                emergencyNote: "هذا الرقم مخصص للطوارئ فقط. للاستفسارات العامة، يرجى استخدام رقم الهاتف الرئيسي.",
+                contactCtaTitle: "هل أنت مستعد لتجربة Loving Holmes؟",
+                contactCtaDesc: "اتصل بنا اليوم لحجز موعد أو لمناقشة احتياجات كلبك",
+                callNow: "اتصل الآن"
+            },
+            en: {
+                contactPageTitle: "Contact Us",
+                contactPageSubtitle: "We're here to answer all your questions",
+                getInTouch: "Get in Touch",
+                contactDesc: "We appreciate your interest in Loving Holmes and look forward to helping you provide the best care for your dog. Feel free to contact us in any way that suits you.",
+                phoneContact: "Phone",
+                mainPhone: "+852 1234 5678",
+                emergencyPhone: "+852 9876 5432 (Emergency)",
+                emailContact: "Email",
+                mainEmail: "info@lovingholmes.com",
+                bookingEmail: "bookings@lovingholmes.com",
+                addressContact: "Address",
+                fullAddress: "123 Palm Street, Hong Kong",
+                district: "Central District, Hong Kong",
+                hoursContact: "Business Hours",
+                receptionHours: "Reception: 8:00 AM - 10:00 PM",
+                veterinaryHours: "Veterinary Services: 24/7",
+                followUsSocial: "Follow Us on Social Media",
+                sendUsMessage: "Send Us a Message",
+                firstNameLabel: "First Name:",
+                lastNameLabel: "Last Name:",
+                emailLabel: "Email:",
+                phoneLabel: "Phone:",
+                subjectLabel: "Subject:",
+                selectSubject: "Select Subject",
+                bookingOption: "Booking",
+                inquiryOption: "General Inquiry",
+                complaintOption: "Complaint",
+                complimentOption: "Compliment",
+                partnershipOption: "Partnership",
+                otherOption: "Other",
+                messageLabel: "Message:",
+                newsletterCheckbox: "I'd like to receive the newsletter and special offers",
+                privacyCheckbox: "I agree to the privacy policy and terms of use",
+                sendMessage: "Send Message",
+                findUs: "Find Us",
+                ourLocation: "Our Location",
+                locationDesc: "123 Palm Street, Central District, Hong Kong",
+                getDirections: "Get Directions",
+                faqTitle: "Frequently Asked Questions",
+                faq1Question: "What are your business hours?",
+                faq1Answer: "Reception is open from 8:00 AM to 10:00 PM daily. Our veterinary services are available 24/7 for emergencies.",
+                faq2Question: "Do I need to book in advance?",
+                faq2Answer: "We strongly recommend booking in advance, especially during peak seasons and holidays. You can book by phone, email, or through our website.",
+                faq3Question: "What are the health requirements for dogs?",
+                faq3Answer: "All dogs must be vaccinated against major diseases and have up-to-date vaccination records. We also require flea and worm checks before boarding.",
+                faq4Question: "Can I visit my dog during their stay?",
+                faq4Answer: "Yes, we welcome visits during business hours. We recommend calling in advance to arrange a suitable time to ensure we don't disturb other dogs.",
+                faq5Question: "Do you offer transportation services?",
+                faq5Answer: "Yes, we offer transportation to and from the hotel. Free transportation is available with the Premium package, and can be added to other packages for an additional fee.",
+                faq6Question: "What happens in case of medical emergencies?",
+                faq6Answer: "We have an on-site veterinary clinic with medical staff available 24/7. In emergency situations, we immediately contact the veterinarian and take necessary action.",
+                emergencyTitle: "Emergency Contacts",
+                emergencyDesc: "For any dog health or safety emergencies, contact us 24/7:",
+                emergencyNote: "This number is for emergencies only. For general inquiries, please use the main phone number.",
+                contactCtaTitle: "Ready to experience Loving Holmes?",
+                contactCtaDesc: "Contact us today to book an appointment or discuss your dog's needs",
+                callNow: "Call Now"
+            }
+        };
+
+        // Merge with main translations
+        Object.assign(translations.ar, contactTranslations.ar);
+        Object.assign(translations.en, contactTranslations.en);
+
+        // Contact form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Here you would normally send the data to a server
+                    // For now, we'll just show a success message
+                    alert('شكراً لتواصلك معنا! سنتصل بك خلال 24 ساعة.\n\nThank you for contacting us! We will get back to you within 24 hours.');
+                    
+                    // Reset form
+                    contactForm.reset();
+                });
+            }
+
+            // FAQ accordion functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                question.addEventListener('click', function() {
+                    // Close other FAQs
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+                            otherItem.querySelector('.faq-question i').classList.remove('fa-chevron-up');
+                            otherItem.querySelector('.faq-question i').classList.add('fa-chevron-down');
+                        }
+                    });
+                    
+                    // Toggle current FAQ
+                    item.classList.toggle('active');
+                    
+                    if (item.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    } else {
+                        answer.style.maxHeight = '0';
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+
+            // Map directions button
+            const directionsBtn = document.querySelector('[data-translate="getDirections"]');
+            if (directionsBtn) {
+                directionsBtn.addEventListener('click', function() {
+                    // Open Google Maps with the address
+                    const address = '123 Palm Street, Central District, Hong Kong';
+                    const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+                    window.open(url, '_blank');
+                });
+            }
+
+            // Social media links
+            const socialLinks = document.querySelectorAll('.social-link');
+            socialLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const platform = this.querySelector('i').className.split('-')[1];
+                    alert(`سيتم توجيهك إلى صفحة ${platform} الخاصة بنا.\n\nYou will be redirected to our ${platform} page.`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

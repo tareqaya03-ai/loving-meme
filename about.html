@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - Loving Holmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1583337134407-607b00a27a4c?w=50&h=50&fit=crop&crop=center" alt="Loving Holmes Logo">
+                    <span class="logo-text" data-translate="logo">Loving Holmes</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-translate="home">الرئيسية</a></li>
+                    <li><a href="about.html" class="nav-link active" data-translate="about">من نحن</a></li>
+                    <li><a href="services.html" class="nav-link" data-translate="services">خدماتنا</a></li>
+                    <li><a href="facilities.html" class="nav-link" data-translate="facilities">المرافق</a></li>
+                    <li><a href="packages.html" class="nav-link" data-translate="packages">الحزم</a></li>
+                    <li><a href="gallery.html" class="nav-link" data-translate="gallery">معرض الصور</a></li>
+                    <li><a href="contact.html" class="nav-link" data-translate="contact">اتصل بنا</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <div class="language-selector">
+                        <select id="languageSelect">
+                            <option value="ar">العربية</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+                    <div class="font-controls">
+                        <button id="decreaseFont" class="font-btn" aria-label="تصغير الخط">A-</button>
+                        <button id="increaseFont" class="font-btn" aria-label="تكبير الخط">A+</button>
+                    </div>
+                    <button id="speakBtn" class="speak-btn" aria-label="قراءة صوتية">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-translate="aboutPageTitle">من نحن</h1>
+                <p data-translate="aboutPageSubtitle">تعرف على قصة Loving Holmes وفلسفتنا في رعاية الكلاب</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 data-translate="ourStory">قصتنا</h2>
+                        <p data-translate="story1">تأسس Loving Holmes في عام 2015 في هونغ كونغ، بدأنا كفكرة بسيطة من محبي الكلاب الذين أرادوا توفير أفضل رعاية ممكنة للكلاب في المدينة.</p>
+                        <p data-translate="story2">على مر السنين، نمونا من فندق صغير إلى منشأة عالمية المستوى تخدم مئات الكلاب كل عام. فريقنا متكون من مدربين محترفين وأطباء بيطرين ومتخصصين في رعاية الحيوانات.</p>
+                        <p data-translate="story3">نحن نؤمن بأن كل كلب deserves أفضل رعاية ممكنة، ولهذا السبب نستثمر في أفضل المرافق والتكنولوجيا والفريق لضمان سعادة وراحة كلابك.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.EKwN825XK5Tn7xtIqjrcTwHaE7?w=2048&h=1365&rs=1&pid=ImgDetMain&o=7&rm=3" alt="فندق Loving Holmes">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="mission-vision">
+            <div class="container">
+                <div class="mission-vision-grid">
+                    <div class="mission-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 data-translate="mission">مهمتنا</h3>
+                        <p data-translate="missionDesc">توفير بيئة آمنة ومريحة ومحفزة للكلاب، مع تقديم خدمات عالية الجودة تضمن سعادة وصحة كلابكم المحبوبة.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 data-translate="vision">رؤيتنا</h3>
+                        <p data-translate="visionDesc">أن نكون الخيار الأول لأصحاب الكلاب في هونغ كونغ، مع التميز في الخدمة والابتكار في رعاية الحيوانات الأليفة.</p>
+                    </div>
+                    <div class="values-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 data-translate="values">قيمنا</h3>
+                        <p data-translate="valuesDesc">الرحمة، الاحترافية، النظافة، السلامة، والسعادة - هذه هي المبادئ التي توجه كل ما نفعله في Loving Holmes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="ourTeam">فريقنا</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.q8XtH9K97Y93aJByQYrSpgHaEM?rs=1&pid=ImgDetMain&o=7&rm=3" alt="عضو الفريق">
+                        </div>
+                        <h3 data-translate="teamMember1Name">أحمد محمد</h3>
+                        <p class="member-title" data-translate="teamMember1Title">المدير العام</p>
+                        <p data-translate="teamMember1Desc">أحمد لديه أكثر من 10 سنوات من الخبرة في إدارة مرافق رعاية الحيوانات وهو شغوف بتوفير أفضل رعاية للكلاب.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://img.freepik.com/premium-photo/dog-is-running-beach-with-ocean-background_865967-370766.jpg" alt="عضوة الفريق">
+                        </div>
+                        <h3 data-translate="teamMember2Name">د. سارة لي</h3>
+                        <p class="member-title" data-translate="teamMember2Title">الطبيبة البيطرية</p>
+                        <p data-translate="teamMember2Desc">د. سارة هي طبيبة بيطرية معتمدة مع خبرة واسعة في رعاية الكلاب والطب الوقائي.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://static.vecteezy.com/system/resources/previews/042/152/020/large_2x/ai-generated-poster-with-a-dog-playing-on-a-beach-in-front-of-the-sea-free-photo.jpg" alt="عضو الفريق">
+                        </div>
+                        <h3 data-translate="teamMember3Name">جون تشن</h3>
+                        <p class="member-title" data-translate="teamMember3Title">مدرب الكلاب الرئيسي</p>
+                        <p data-translate="teamMember3Desc">جون هو مدرب كلاب محترف مع شهادات في السلوك الحيواني وتدريب الكلاب.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://2.bp.blogspot.com/-pBpJGRCcCbU/WPjg0RnBE1I/AAAAAAAAxek/OVxHdYdaU7QhZ3QqT37OnalsFaT9nxE-gCLcB/s1600/1403216446_118.jpg" alt="عضوة الفريق">
+                        </div>
+                        <h3 data-translate="teamMember4Name">ماري وونغ</h3>
+                        <p class="member-title" data-translate="teamMember4Title">أخصائية التجميل</p>
+                        <p data-translate="teamMember4Desc">ماري متخصصة في تجميل الكلاب مع خبرة في جميع أنواع الحلاقة والعناية بالكلاب.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="ourAchievements">إنجازاتنا</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="5000">0</div>
+                        <div class="stat-label" data-translate="happyDogs">كلب سعيد</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label" data-translate="yearsExperience">سنوات خبرة</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label" data-translate="hoursService">ساعة خدمة</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label" data-translate="satisfiedCustomers">عميل راضٍ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 data-translate="joinFamily">انضم إلى عائلة Loving Holmes</h2>
+                    <p data-translate="ctaDesc2">اكتشف لماذا نحن الخيار المفضل لأصحاب الكلاب في هونغ كونغ</p>
+                    <a href="contact.html" class="btn btn-primary btn-large" data-translate="contactUs">اتصل بنا اليوم</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="aboutFooter">عن Loving Holmes</h3>
+                    <p data-translate="footerDesc">فندق الكلاب الفاخر في هونغ كونغ نقدم أفضل رعاية لكلابك المحبوبة</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="quickLinks">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="about.html" data-translate="about">من نحن</a></li>
+                        <li><a href="services.html" data-translate="services">خدماتنا</a></li>
+                        <li><a href="packages.html" data-translate="packages">الحزم</a></li>
+                        <li><a href="contact.html" data-translate="contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="contactInfo">معلومات الاتصال</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-translate="address">هونغ كونغ، الصين</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-translate="phone">+852 1234 5678</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-translate="email">info@lovingholmes.com</span></p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="hours">ساعات العمل</h3>
+                    <p data-translate="hoursDesc">24/7 للخدمات البيطرية</p>
+                    <p data-translate="receptionHours">الاستقبال: 8:00 ص - 10:00 م</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Loving Holmes. <span data-translate="rights">جميع الحقوق محفوظة</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Additional translations for about page
+        const aboutTranslations = {
+            ar: {
+                aboutPageTitle: "من نحن",
+                aboutPageSubtitle: "تعرف على قصة Loving Holmes وفلسفتنا في رعاية الكلاب",
+                ourStory: "قصتنا",
+                story1: "تأسس Loving Holmes في عام 2015 في هونغ كونغ، بدأنا كفكرة بسيطة من محبي الكلاب الذين أرادوا توفير أفضل رعاية ممكنة للكلاب في المدينة.",
+                story2: "على مر السنين، نمونا من فندق صغير إلى منشأة عالمية المستوى تخدم مئات الكلاب كل عام. فريقنا متكون من مدربين محترفين وأطباء بيطرين ومتخصصين في رعاية الحيوانات.",
+                story3: "نحن نؤمن بأن كل كلب يستحق أفضل رعاية ممكنة، ولهذا السبب نستثمر في أفضل المرافق والتكنولوجيا والفريق لضمان سعادة وراحة كلابك.",
+                mission: "مهمتنا",
+                missionDesc: "توفير بيئة آمنة ومريحة ومحفزة للكلاب، مع تقديم خدمات عالية الجودة تضمن سعادة وصحة كلابكم المحبوبة.",
+                vision: "رؤيتنا",
+                visionDesc: "أن نكون الخيار الأول لأصحاب الكلاب في هونغ كونغ، مع التميز في الخدمة والابتكار في رعاية الحيوانات الأليفة.",
+                values: "قيمنا",
+                valuesDesc: "الرحمة، الاحترافية، النظافة، السلامة، والسعادة - هذه هي المبادئ التي توجه كل ما نفعله في Loving Holmes.",
+                ourTeam: "فريقنا",
+                teamMember1Name: "أحمد محمد",
+                teamMember1Title: "المدير العام",
+                teamMember1Desc: "أحمد لديه أكثر من 10 سنوات من الخبرة في إدارة مرافق رعاية الحيوانات وهو شغوف بتوفير أفضل رعاية للكلاب.",
+                teamMember2Name: "د. سارة لي",
+                teamMember2Title: "الطبيبة البيطرية",
+                teamMember2Desc: "د. سارة هي طبيبة بيطرية معتمدة مع خبرة واسعة في رعاية الكلاب والطب الوقائي.",
+                teamMember3Name: "جون تشن",
+                teamMember3Title: "مدرب الكلاب الرئيسي",
+                teamMember3Desc: "جون هو مدرب كلاب محترف مع شهادات في السلوك الحيواني وتدريب الكلاب.",
+                teamMember4Name: "ماري وونغ",
+                teamMember4Title: "أخصائية التجميل",
+                teamMember4Desc: "ماري متخصصة في تجميل الكلاب مع خبرة في جميع أنواع الحلاقة والعناية بالكلاب.",
+                ourAchievements: "إنجازاتنا",
+                happyDogs: "كلب سعيد",
+                yearsExperience: "سنوات خبرة",
+                hoursService: "ساعة خدمة",
+                satisfiedCustomers: "عميل راضٍ",
+                joinFamily: "انضم إلى عائلة Loving Holmes",
+                ctaDesc2: "اكتشف لماذا نحن الخيار المفضل لأصحاب الكلاب في هونغ كونغ"
+            },
+            en: {
+                aboutPageTitle: "About Us",
+                aboutPageSubtitle: "Learn about Loving Holmes' story and our philosophy in dog care",
+                ourStory: "Our Story",
+                story1: "Founded in 2015 in Hong Kong, Loving Holmes started as a simple idea from dog lovers who wanted to provide the best possible care for dogs in the city.",
+                story2: "Over the years, we've grown from a small hotel to a world-class facility serving hundreds of dogs annually. Our team consists of professional trainers, veterinarians, and animal care specialists.",
+                story3: "We believe that every dog deserves the best possible care, which is why we invest in the best facilities, technology, and team to ensure the happiness and comfort of your dogs.",
+                mission: "Our Mission",
+                missionDesc: "To provide a safe, comfortable, and stimulating environment for dogs, offering high-quality services that ensure the happiness and health of your beloved pets.",
+                vision: "Our Vision",
+                visionDesc: "To be the first choice for dog owners in Hong Kong, with excellence in service and innovation in pet care.",
+                values: "Our Values",
+                valuesDesc: "Compassion, Professionalism, Cleanliness, Safety, and Happiness - these are the principles that guide everything we do at Loving Holmes.",
+                ourTeam: "Our Team",
+                teamMember1Name: "Ahmed Mohamed",
+                teamMember1Title: "General Manager",
+                teamMember1Desc: "Ahmed has over 10 years of experience in managing animal care facilities and is passionate about providing the best care for dogs.",
+                teamMember2Name: "Dr. Sarah Lee",
+                teamMember2Title: "Veterinarian",
+                teamMember2Desc: "Dr. Sarah is a licensed veterinarian with extensive experience in dog care and preventive medicine.",
+                teamMember3Name: "John Chen",
+                teamMember3Title: "Head Dog Trainer",
+                teamMember3Desc: "John is a professional dog trainer with certifications in animal behavior and dog training.",
+                teamMember4Name: "Mary Wong",
+                teamMember4Title: "Grooming Specialist",
+                teamMember4Desc: "Mary specializes in dog grooming with expertise in all types of grooming and dog care.",
+                ourAchievements: "Our Achievements",
+                happyDogs: "Happy Dogs",
+                yearsExperience: "Years Experience",
+                hoursService: "Hours Service",
+                satisfiedCustomers: "Satisfied Customers",
+                joinFamily: "Join the Loving Holmes Family",
+                ctaDesc2: "Discover why we're the preferred choice for dog owners in Hong Kong"
+            }
+        };
+
+        // Merge with main translations
+        Object.assign(translations.ar, aboutTranslations.ar);
+        Object.assign(translations.en, aboutTranslations.en);
+
+        // Animated counter for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const animate = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(animate, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                // Start animation when element is in viewport
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animate();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+
+                observer.observe(counter);
+            });
+        }
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            animateCounters();
+        });
+    </script>
+</body>
+</html>
